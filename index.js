@@ -101,9 +101,9 @@ function toCSV(obj) {
 	var COMMIT_COL = "commits";
 	var PULL_REQUEST_COL = "pull_requests";
 	var ws = fs.createWriteStream('./results.csv');
-	fs.appendFileSync('./results.csv', COMMIT_COL + ', ' + PULL_REQUEST_COL + '\n');
+	fs.appendFileSync('./msr-results.csv', COMMIT_COL + ', ' + PULL_REQUEST_COL + '\n');
 	for(var i = 0 ; i < COUNT; i++) {
-		fs.appendFileSync('./results.csv', obj['COMMIT'][i] + ', ' + obj['PULL_REQUEST'][i] + '\n');
+		fs.appendFileSync('./msr-results.csv', obj['COMMIT'][i] + ', ' + obj['PULL_REQUEST'][i] + '\n');
 	}	
 	ws.end();
 }
