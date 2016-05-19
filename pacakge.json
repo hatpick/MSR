@@ -1,0 +1,16 @@
+{
+  "name": "msr",
+  "version": "1.0.0",
+  "description": "MSR",
+  "author": "Soroush <hatpick@gmail.com>",    
+  "keywords": [
+    "msr",
+    "data mining"    
+  ],
+  "dependencies": {
+    "felixge/node-mysql": "^2.10.2",
+    "moment": "^2.4.0"
+  },
+  "license": "MIT"
+}
+  
